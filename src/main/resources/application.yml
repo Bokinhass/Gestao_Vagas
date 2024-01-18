@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/gestao_vagas"
+    username: admin
+    password: admin
+
+security:
+  token:
+    secret=5381227_@VAGAS#
