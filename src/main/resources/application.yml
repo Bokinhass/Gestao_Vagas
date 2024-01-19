@@ -11,3 +11,4 @@ spring:
 security:
   token:
     secret=5381227_@VAGAS#
+    key=5381227_@VAGAS#CANDIDATE
