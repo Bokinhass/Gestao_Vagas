@@ -33,8 +33,8 @@ public class CandidateController {
   }
 
   @GetMapping("/profile")
-  @PreAuthorize("hasRole('candidate)")
-  public ResponseEntity<Object> get(HttpServletRequest request) {
+  @PreAuthorize("hasRole('CANDIDATE)")
+  public ResponseEntity<Object> profile(HttpServletRequest request) {
     var idCandidate = request.getAttribute("candidate_id");
 
     try {
