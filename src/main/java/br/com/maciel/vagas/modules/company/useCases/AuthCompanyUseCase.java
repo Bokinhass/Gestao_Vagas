@@ -1,7 +1,7 @@
 package br.com.maciel.vagas.modules.company.useCases;
 
-import br.com.maciel.vagas.modules.company.controller.ICompanyRepository;
 import br.com.maciel.vagas.modules.company.dto.AuthCompanyDTO;
+import br.com.maciel.vagas.modules.company.repository.ICompanyRepository;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import org.springframework.beans.factory.annotation.Autowired;

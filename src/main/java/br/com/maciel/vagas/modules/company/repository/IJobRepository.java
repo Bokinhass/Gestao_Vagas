@@ -1,4 +1,4 @@
-package br.com.maciel.vagas.modules.company.controller;
+package br.com.maciel.vagas.modules.company.repository;
 
 import br.com.maciel.vagas.modules.company.entities.JobEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

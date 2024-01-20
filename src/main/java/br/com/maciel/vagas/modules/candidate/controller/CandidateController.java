@@ -1,12 +1,15 @@
 package br.com.maciel.vagas.modules.candidate.controller;
 
-import br.com.maciel.vagas.modules.candidate.CandidateEntity;
+import br.com.maciel.vagas.modules.candidate.entities.CandidateEntity;
 import br.com.maciel.vagas.modules.candidate.useCases.CreateCandidateUseCase;
 import br.com.maciel.vagas.modules.candidate.useCases.ProfileCandidateUseCase;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/candidate")
@@ -29,9 +32,13 @@ public class CandidateController {
   }
 
   @GetMapping("/profile")
-  public ResponseEntity<Object> get() {
+  public ResponseEntity<Object> get(HttpServletRequest request) {
+    var idCanidate = request.getAttribute("candidate_id");
+
     try {
-      var profile = this.profileCandidateUseCase.execute(null);
+      var profile = this.profileCandidateUseCase
+          .execute(UUID.fromString(idCanidate.toString()));
+
       return ResponseEntity.ok().body(profile);
 
     } catch (Exception e) {

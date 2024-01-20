@@ -1,7 +1,7 @@
 package br.com.maciel.vagas.modules.candidate.useCases;
 
-import br.com.maciel.vagas.modules.candidate.controller.ICandidateRepository;
 import br.com.maciel.vagas.modules.candidate.dto.ProfileCanditeResponseDTO;
+import br.com.maciel.vagas.modules.candidate.repository.ICandidateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;

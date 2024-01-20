@@ -24,8 +24,6 @@ public class JobController {
   public JobEntity create(@Valid @RequestBody CreateJobDTO createJobDTO, HttpServletRequest request) {
     var companyId = request.getAttribute("company_id");
 
-    //jobEntity.setCompanyId(UUID.fromString(companyId.toString()));
-
     var jobEntity = JobEntity.builder()
         .benefits(createJobDTO.getBenefits())
         .companyId(UUID.fromString(companyId.toString()))

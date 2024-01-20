@@ -1,8 +1,8 @@
 package br.com.maciel.vagas.modules.company.useCases;
 
 import br.com.maciel.vagas.exceptions.CompanyFoundException;
-import br.com.maciel.vagas.modules.company.controller.ICompanyRepository;
 import br.com.maciel.vagas.modules.company.entities.CompanyEntity;
+import br.com.maciel.vagas.modules.company.repository.ICompanyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

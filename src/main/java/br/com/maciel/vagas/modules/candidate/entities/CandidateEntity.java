@@ -1,4 +1,4 @@
-package br.com.maciel.vagas.modules.candidate;
+package br.com.maciel.vagas.modules.candidate.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

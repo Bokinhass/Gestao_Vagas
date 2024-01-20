@@ -1,8 +1,8 @@
 package br.com.maciel.vagas.modules.candidate.useCases;
 
-import br.com.maciel.vagas.modules.candidate.controller.ICandidateRepository;
 import br.com.maciel.vagas.modules.candidate.dto.AuthCandidateRequestDTO;
 import br.com.maciel.vagas.modules.candidate.dto.AuthCandidateResponseDTO;
+import br.com.maciel.vagas.modules.candidate.repository.ICandidateRepository;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import org.apache.tomcat.websocket.AuthenticationException;
